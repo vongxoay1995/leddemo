@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2196F3">
+
+        <FrameLayout
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:layout_height="250dp">
+            <com.eco.myapplication.LEDView
+                android:id="@+id/preview_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_led"
+                android:visibility="visible"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edtIput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/preview"
+            android:layout_marginTop="20dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:text="💖 Enter your text"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+</layout>
